@@ -5,3 +5,5 @@ server.js
 tempNotes/note.json
 
 routes/routes.js
+
+.npmignore
