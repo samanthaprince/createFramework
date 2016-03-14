@@ -29,6 +29,12 @@ describe('Test Router',() => {
       done();
   })
 
+  it('should test the POST routes', (done) => {
+      notesRouter.routes.POST['/notes'];
+      expect(notesRouter.routes).to.be.an('object')
+      done();
+  })
+
   it('should test the PATCH routes', (done) => {
       notesRouter.routes.PATCH['/notes'];
       expect(notesRouter.routes).to.be.an('object')
@@ -46,10 +52,6 @@ describe('Test Router',() => {
     done();
   });
 
-  it('should test that the GET method is a function', (done) => {
-    expect(notesRouter.get).to.be.a('function');
-    done();
-  });
 
   it('should test that the POST method is a function', (done) => {
     expect(notesRouter.post).to.be.a('function');
