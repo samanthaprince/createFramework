@@ -1,1 +1,7 @@
 node_modules
+
+server.js
+
+tempNotes/note.json
+
+routes/routes.js
